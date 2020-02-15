@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box; /*Helps with formatting*/
+  /*Formats with border and padding in mind*/
+  /*border: 1px solid #00000000;*/
+}
+
+body{
+  margin: 0px; /*This and the html stuff makes the decorations more flush with the page*/
+  padding: 0px;
+}
+
+html{
+  margin: 0px;
+  padding: 0px;
+}
+
+.topNav{
+  overflow: hidden; /* Removes excess stuff to fit box */
+
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.topNav.home {
+  background-color: #c2c2c2c2; /*Background color*/
+}
+
+.topNav.fire {
+  background-color: #ff0000c2; /*Background color*/
+}
+
+.topNav.water{
+  background-color: #30a6a0c2; /*Background color*/
+}
+
+.topNav.earth{
+  background-color: #1d8228c2; /*Background color*/
+}
+
+.topNav.air{
+  background-color: #d19c58c2; /*Background color*/
+}
+
+
+.topNav a{
+  font-weight: bold;
+  font-size: 3vh; /*Changes font size*/
+  float: left; /*Buttons are created from right to left*/
+  display: block; /*block shape display*/
+  color: #fff; /*color of text*/
+  text-align: center; /*buttons are center aligned for text*/
+  padding: 14px 16px; /*padding to separate buttons*/
+  text-decoration: none; /*Sorry no text decoration this time*/
+}
+
+.topNav.home a:hover {
+  background-color: #333; /*Color of button when mouse hovers*/
+  color: #fff; /*Color of text when mouse hovers*/
+}
+
+.topNav.water a:hover {
+  background-color: #a0dffa; /*Color of button when mouse hovers*/
+  color: #30a6a0; /*Color of text when mouse hovers*/
+}
+
+.topNav.fire a:hover {
+  background-color: #ffadcb; /*Color of button when mouse hovers*/
+  color: #ff0000; /*Color of text when mouse hovers*/
+}
+
+.topNav.earth a:hover {
+  background-color: #cbffcb; /*Color of button when mouse hovers*/
+  color: #1d8228; /*Color of text when mouse hovers*/
+}
+
+.topNav.air a:hover {
+  background-color: #fae1c0; /*Color of button when mouse hovers*/
+  color: #d19c58; /*Color of text when mouse hovers*/
+}
+
+
+
+.heroTitle{
+  background-color: #000000c2; /*Background color*/
+  height: 100vh; /*Image changed to 100% viewing height of browser*/
+  background-size: cover; /*Scales the image to cover the entire element*/
+  background-repeat: no-repeat; /*No repition of background image*/
+  background-position: top; /*Image starts from top*/
+  padding: 100px; /*Padding for text in the title*/
+}
+
+.heroTitle.home {
+    background-image: url('data/Head.jpg');  /*Individual setups per page*/
+    color: #fff;
+}
+
+.heroTitle.water {
+    background-image: url('data/Water.jpg');
+    color: #30a6a0;
+}
+
+.heroTitle.fire {
+    background-image: url('data/Fire.jpg');
+    color: #ff0000;
+}
+
+.heroTitle.earth {
+    background-image: url('data/Earth.jpg');
+    color: #1d8228;
+}
+
+.heroTitle.air {
+    background-image: url('data/Air.jpg');
+    color: #d19c58;
+}
+
+.mainTitleText {
+  font-size: 64pt;
+}
+
+
+.mainContainer {
+  padding-top: 1px;
+  position: static;
+}
+
+
+.footer { /*Footers of website colors change according to page type*/
+  text-align: center;
+  padding: 10px;
+}
+
+.footer.home {
+  background-color: #c2c2c2;
+}
+
+.footer.fire {
+  background-color: #ff0000;
+}
+
+.footer.water {
+  background-color: #30a6a0;
+}
+
+.footer.earth {
+  background-color: #1d8228;
+}
+
+.footer.air {
+  background-color: #d19c58;
+}
+
+
+.columnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textColumn {}
+
+.textColumn.big {
+  width: 100%;
+}
+
+.textColumn.half {
+  width: 50%;
+}
+
+.textColumn.third {
+  width: 33.33%;
+}

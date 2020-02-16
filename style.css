@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box; /*Helps with formatting*/
   /*Formats with border and padding in mind*/
-  /*border: 1px solid #00000000;*/
+  /*border: 1px solid #000000;*/
 }
 
 body{
@@ -12,6 +12,10 @@ body{
 html{
   margin: 0px;
   padding: 0px;
+}
+
+p{
+  font-size: 20px;
 }
 
 .topNav{
@@ -27,7 +31,7 @@ html{
 }
 
 .topNav.fire {
-  background-color: #ff0000c2; /*Background color*/
+  background-color: #e6470ec2; /*Background color*/
 }
 
 .topNav.water{
@@ -66,7 +70,7 @@ html{
 
 .topNav.fire a:hover {
   background-color: #ffadcb; /*Color of button when mouse hovers*/
-  color: #ff0000; /*Color of text when mouse hovers*/
+  color: #e6470e; /*Color of text when mouse hovers*/
 }
 
 .topNav.earth a:hover {
@@ -102,7 +106,7 @@ html{
 
 .heroTitle.fire {
     background-image: url('data/Fire.jpg');
-    color: #ff0000;
+    color: #e6470e;
 }
 
 .heroTitle.earth {
@@ -119,12 +123,10 @@ html{
   font-size: 64pt;
 }
 
-
 .mainContainer {
   padding-top: 1px;
   position: static;
 }
-
 
 .footer { /*Footers of website colors change according to page type*/
   text-align: center;
@@ -132,11 +134,11 @@ html{
 }
 
 .footer.home {
-  background-color: #c2c2c2;
+  background-color: #c2c2c2c2 ;
 }
 
 .footer.fire {
-  background-color: #ff0000;
+  background-color: #e6470e
 }
 
 .footer.water {
@@ -151,22 +153,31 @@ html{
   background-color: #d19c58;
 }
 
+.contentContainer {
+  padding-right: 32px;
+  padding-left: 32px;
+}
 
-.columnContainer {
-  display: flex;
+.columnContainer:after { /*Used to separate rows of columns Resets format for next row */
+  content: "";
+  display: table;
+  clear: both;
   justify-content: space-between;
 }
 
-.textColumn {}
-
-.textColumn.big {
-  width: 100%;
+.column {
+  float: left;
+  padding: 32px;
 }
 
-.textColumn.half {
+.column.big {
+  width: 80%;
+}
+
+.column.half {
   width: 50%;
 }
 
-.textColumn.third {
-  width: 33.33%;
+.column.small {
+  width: 15%;
 }

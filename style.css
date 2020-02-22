@@ -4,14 +4,14 @@
   /*border: 1px solid #000000;*/
 }
 
-body{
+body, html{
   margin: 0px; /*This and the html stuff makes the decorations more flush with the page*/
   padding: 0px;
 }
 
-html{
-  margin: 0px;
-  padding: 0px;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 p{
@@ -50,12 +50,18 @@ p{
 .topNav a{
   font-weight: bold;
   font-size: 3vh; /*Changes font size*/
-  float: left; /*Buttons are created from right to left*/
-  display: block; /*block shape display*/
+  display: flex; /*block shape display*/
+  justify-content: center;
   color: #fff; /*color of text*/
   text-align: center; /*buttons are center aligned for text*/
   padding: 14px 16px; /*padding to separate buttons*/
   text-decoration: none; /*Sorry no text decoration this time*/
+}
+
+.topMenu {
+  display: flex;
+  flex-direction: row; /*Flex-direction: row is default but here for learning purposes*/
+  width: 80vw;
 }
 
 .topNav.home a:hover {
@@ -86,6 +92,8 @@ p{
 
 
 .heroTitle{
+  display: flex;
+  justify-content: center;
   background-color: #000000c2; /*Background color*/
   height: 100vh; /*Image changed to 100% viewing height of browser*/
   background-size: cover; /*Scales the image to cover the entire element*/
@@ -125,7 +133,8 @@ p{
 
 .mainContainer {
   padding-top: 1px;
-  position: static;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer { /*Footers of website colors change according to page type*/
@@ -160,7 +169,7 @@ p{
 
 .columnContainer:after { /*Used to separate rows of columns Resets format for next row */
   content: "";
-  display: table;
+  display: flex;
   clear: both;
   justify-content: space-between;
 }
@@ -180,4 +189,9 @@ p{
 
 .column.small {
   width: 15%;
+}
+
+.subtitle {
+  font-size: 1.9vh;
+  font-style: italic;
 }

@@ -170,15 +170,16 @@ p{
   padding-left: 32px;
 }
 
-.columnContainer:after { /*Used to separate rows of columns Resets format for next row */
+.columnContainer { /*Used to separate rows of columns Resets format for next row */
   content: "";
   display: flex;
   clear: both;
-  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .column {
-  float: left;
+  display: flex;
+  flex-flow: column; 
   padding: 32px;
 }
 

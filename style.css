@@ -20,11 +20,13 @@ p{
 }
 
 .topNav{
+  display: flex;
   overflow: hidden; /* Removes excess stuff to fit box */
 
   height: 10vh;
   position: fixed;
   width: 100vw;
+  align-items: center;
 }
 
 .topNav.home {
